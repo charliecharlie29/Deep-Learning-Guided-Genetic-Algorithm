@@ -1,5 +1,6 @@
 # Training and test data
 Deep-Learning-Model-Data/
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

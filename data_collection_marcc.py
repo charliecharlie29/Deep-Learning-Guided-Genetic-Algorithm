@@ -649,6 +649,9 @@ def loss_on_dig_sim_var_v2(strip, rotation = 20):
     
     return loss
 
+segment_lengths_ex_four_types = [938, 954, 1022, 843, 931, 722, 702, 655, 1066, 947]
+segment_identities_ex_four_types = [[2,3,2,3,2,3,4,0,1,4],[4,4,3,1,3,4,4,1,3,2]]
+sampleStrip = ActuatorStrip(segment_lengths_ex_four_types, segment_identities_ex_four_types, four_t_rocs, four_t_ctls)
 loss_on_dig_sim_var_v2(sampleStrip, rotation = 4) # -2080099.4708855439 if 0, messed up, restart kernal
 
 def fab_steps_strip_requires(identities):
